@@ -1,0 +1,90 @@
+@media(min-width:1150px) and (max-width:1235px){
+    #my_nav #main_menu ul li a{
+       padding: 0 8px;
+    }
+}
+@media(min-width:992px) and (max-width:1149.98px){
+    #my_nav #main_menu ul li a{
+       padding: 0 8px;
+       font-size: 12px;
+    }
+    #footer .footer_menu .left_footer ul li a{
+        font-size: 14px;
+    }
+    #footer .footer_menu .footer_right_top span,
+    #footer .footer_menu .footer_right_bottom span
+    #footer .footer_menu .footer_right_top a, 
+    #footer .footer_menu .footer_right_bottom a{
+        font-size: 14px;
+    }
+}
+@media(max-width:991.98px){
+    .main_din{
+        width: 100%;
+        padding: 0 12px;
+        max-width: 1350px;
+    }
+    #top_header .logo_text_item .search_item{
+        right: 0;
+        width: 100%;
+    }
+    #my_nav.stickyNav #main_menu{
+        padding: 0;
+    }
+    #my_nav.stickyNav a.nav_logo{
+        top: -6px;
+    }
+    #my_nav.stickyNav #main_menu .bar_logo {
+        margin:9px 40px 0 0;
+    }
+    #my_nav #main_menu .bar_logo {
+        margin: -78px 40px 0 0;
+    }
+    #my_nav.stickyNav a.nav_logo{
+        left: 12px;
+        top: -15px;
+    }
+    #my_nav.stickyNav #main_menu ul{
+        margin-top: 18px;
+    }
+    #my_nav #main_menu ul{
+        background-color: #86bc42;
+        margin-top: 44px;
+    }
+    #my_nav #main_menu ul li a{
+        font-size: 14px;
+        line-height: 16px;
+        border-right: none;
+        border-bottom: 1px solid #f8f8f9;
+        display: block;
+        padding: 8px 15px;
+    }
+}
+@media(max-width:767.98px){
+    #service .service_container .service_container_item a{
+        font-size: 14px;
+    }
+    #footer .footer_menu .left_footer ul li{
+        display: block;
+        text-align: center;
+    }
+    #footer .footer_menu .left_footer ul li a{
+        border-right: none;
+    }
+    #footer .footer_menu .right_footer{
+        text-align: center !important;
+    }
+}
+@media(max-width:575.98px){
+    #slider .slider_container .slider_item .slider_text_item h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media(max-width:400px){
+    #top_header .logo_text_item .login_btn ul li a{
+        font-size: 13px;
+        padding: 5px 4px;
+    }
+}
+
