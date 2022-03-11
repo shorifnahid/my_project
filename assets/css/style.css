@@ -212,6 +212,7 @@ input:focus-visible{
 #my_nav.stickyNav #main_menu ul{
     position: relative;
     right: -85px;
+    
 }
 #my_nav #main_menu ul{
     width: 100%;
@@ -503,6 +504,144 @@ input:focus-visible{
 .panel_arrow,
 /* sidebar css end */
 
+/* singup css start */
+#singup .singup_container ul li{
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+#singup .singup_container .tab_content .tab_item{
+    display: none;
+}
+#singup .singup_container .tab_content .tab_item .form-group{
+    margin-bottom: 15px;
+}
+#singup .singup_container .tab_content .tab_item label{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--Night-rider-color);
+}
+#singup .singup_container .tab_content .tab_item input{
+    display: block;
+    padding: 6px;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    color: var(--div-gray-color);
+    background-color: #fff;
+}
+#singup .singup_container .tab_content .tab_item input.captcha{
+    max-width: 120px;
+}
+#singup .singup_container .tab_content .tab_item span.valid_number{
+    position: relative;
+    bottom: 32px;
+    left: 140px;
+    width: auto;
+    display: inline-block;
+    height: auto;
+    background: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 4px 15px;
+    font-family: italic;
+}
+#singup .singup_container .tab_content .checkbox{
+    margin: 10px 0;
+}
+#singup .singup_container .tab_content .checkbox label{
+    min-height: 20px;
+    max-width: 100%;
+    display: inline-block;
+    padding-left: 25px;
+    line-height: 24px;
+    cursor: pointer;
+}
+#singup .singup_container .tab_content .checkbox  input[type="checkbox"]{
+    position: absolute;
+    width: 20px;
+    margin-left: 0;
+    margin-top: -3px;
+    cursor: pointer;
+}
+/* singup css end */
+
+/* login css start */
+#login .login_head{
+    border-bottom: 2px solid var(--main-color);
+}
+#login .login_head h3{
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--main-color);
+    padding:7px 15px 3px ;
+    display: inline-block;
+    line-height: 24px;
+}
+#login .login_page{
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.175);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#login .login_page .form-group{
+    margin-bottom: 10px;
+}
+#login .login_page label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--Night-rider-color);
+}
+#login .login_page label.error{
+    font-size: 12px;
+    color: #ea3c3b;
+    font-weight: 100;
+    line-height: 16px;
+}
+#login .login_page input{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    padding: 6px;
+    color: var(--div-gray-color);
+}
+#login .login_page input.captcha{
+    max-width: 120px;
+    max-height: 26px;
+}
+#login .login_page .valid_number{
+    position: relative;
+    bottom: 24px;
+    left: 135px;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px;
+}
+#login .login_page a{
+    font-size: 15px;
+    color: var(--Night-rider-color);
+}
+#login .login_page button{
+    background-color: var(--Deep-lilac-color);
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+}
+/* login css end */
+
 /* footer css start */
 #footer{
     margin-top: 50px;
@@ -574,3 +713,4 @@ input:focus-visible{
     color: var(--main-color);
 }
 /* footer css end */
+

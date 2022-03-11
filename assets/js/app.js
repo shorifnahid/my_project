@@ -28,9 +28,19 @@ $(function(){
     dots:true,
     dotsClass:'slider_dots',
    })
+   //Tab section
+   $('.tab_item:first').show();
+   $('.tab_menu li:first').addClass('active');
+   $('.tab_menu li ').click(function(event){
+        index = $(this).index();
+        $('.tab_menu li ').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_item').hide();
+        $('.tab_item').eq(index).show();
+   })
+
+
     
-    //
- 
     
 })
 
