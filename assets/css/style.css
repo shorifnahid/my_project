@@ -34,7 +34,9 @@ ul{
 a,a:hover{
     text-decoration: none;
 }
-
+html{
+    overflow-x: hidden;
+}
 body{
     font-family:'Roboto', sans-serif;
     /* background-image: url(../img/bg_main.gif); */
@@ -48,6 +50,20 @@ img{
 }
 input:focus-visible{
     outline: 0;
+}
+#singup .singup_head,
+#login .login_head{
+    border-bottom: 2px solid var(--main-color);
+    margin-bottom: 15px;
+}
+#singup .singup_head h3,
+#login .login_head h3{
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--main-color);
+    padding:7px 15px 3px ;
+    display: inline-block;
+    line-height: 24px;
 }
 /* common css end */
 
@@ -116,9 +132,6 @@ input:focus-visible{
 #top_header .logo_text_item .login_btn{
     height: 36px;
 }
-#top_header .logo_text_item .login_btn ul{
-   
-}
 #top_header .logo_text_item .login_btn ul li{
     display: inline-block;
     padding: 10px 0;
@@ -129,6 +142,14 @@ input:focus-visible{
     border: 1px solid var(--main-color);
     background-color: #eeeeee70;
     color: #787a7f;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#top_header .logo_text_item .login_btn ul li:hover a{
+    background-color: #89b22f99;
 }
 #top_header .logo_text_item .login_btn ul li a i{
     font-size: 16px;
@@ -162,7 +183,9 @@ input:focus-visible{
     text-align: center;
     color: var(--main-color);
     font-size: 15px;
+    cursor: pointer;
 }
+
 /* Top Header css end */
 
 /* navbar css start */
@@ -277,9 +300,10 @@ input:focus-visible{
     position: absolute;
     color: red;
     height: 100%;
+    width: 3300px;
     line-height: 36px;
-    animation: animate 2s linear infinite;
-    -webkit-animation: animate 16s linear infinite;
+    animation: animate 35s linear infinite;
+    -webkit-animation: animate 35s linear infinite;
 }
 @keyframes animate{
     0%{
@@ -433,6 +457,7 @@ input:focus-visible{
     position: relative;
     border: 1px solid #cbced2;
     margin-bottom: 10px;
+    box-shadow:0 1px 5px #ccc ;
 }
 
 .panel_item ul.slider_dots{
@@ -505,12 +530,22 @@ input:focus-visible{
 /* sidebar css end */
 
 /* singup css start */
+
 #singup .singup_container ul li{
     display: inline-block;
     font-size: 15px;
     padding: 10px 15px;
     border: 1px solid #ddd;
     cursor: pointer;
+}
+#singup .singup_container ul li:hover{
+    color: var(--main-color);
+}
+#singup .singup_container ul li.active{
+    background-color: #fff;
+}
+#singup .singup_container .tab_content{
+    margin-top: 30px;
 }
 #singup .singup_container .tab_content .tab_item{
     display: none;
@@ -524,6 +559,12 @@ input:focus-visible{
     font-weight: 500;
     margin-bottom: 5px;
     color: var(--Night-rider-color);
+}
+#singup .singup_container .tab_content .tab_item label.error{
+    font-size: 12px;
+    color: #ea3c3b;
+    font-weight: 100;
+    margin-top: 5px;
 }
 #singup .singup_container .tab_content .tab_item input{
     display: block;
@@ -569,20 +610,34 @@ input:focus-visible{
     margin-top: -3px;
     cursor: pointer;
 }
+#singup .singup_container .tab_content .tab_item button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #61319b;
+    padding:10px 14px ;
+    border: none;
+    text-align: center;
+    display: inline-block;
+}
+#singup .singup_container .tab_content .tab_item span{
+    font-size: 15px;
+    color: var(--Night-rider-color);
+    display: inline-block;
+}
+#singup .singup_container .tab_content .tab_item a{
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(69, 206, 69);
+
+}
+#singup .singup_container .tab_content .tab_item a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
 /* singup css end */
 
 /* login css start */
-#login .login_head{
-    border-bottom: 2px solid var(--main-color);
-}
-#login .login_head h3{
-    font-size: 18px;
-    color: #fff;
-    background-color: var(--main-color);
-    padding:7px 15px 3px ;
-    display: inline-block;
-    line-height: 24px;
-}
+
 #login .login_page{
     padding: 30px;
     background-color: #fff;
@@ -610,6 +665,11 @@ input:focus-visible{
     color: #ea3c3b;
     font-weight: 100;
     line-height: 16px;
+}
+#login .login_page label.bt_error{
+    position: relative;
+    left: -56px;
+
 }
 #login .login_page input{
     display: block;

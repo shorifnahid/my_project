@@ -1,5 +1,5 @@
 $(function(){
-    //
+    //navbar fixed
     $(window).on('scroll',function(){
         if($(window).scrollTop()>150){
             $('#my_nav').addClass('stickyNav')
@@ -7,6 +7,7 @@ $(function(){
             $('#my_nav').removeClass('stickyNav')
         }
     })
+
     // slick slider
     $('.slick_slider').slick({
         arrows:false,
@@ -18,7 +19,7 @@ $(function(){
         dotsClass:'slider_dots',
     })
 
-    //slick_chart
+    //graphchart slick
    $('.hchart_slick').slick({
     arrows:false,
     fade:true,
@@ -44,7 +45,23 @@ $(function(){
     
 })
 
-
+//splide js
+var splide = new Splide( '.splide', {
+    type   : 'loop',
+    direction: 'ttb',
+    height   : '10rem',
+    wheel    : true,
+    autoplay:true,
+    arrows : false,
+    pagination : false,
+    speed:1000,
+    
+   
+  } );
+  
+  splide.mount();
+  
+//graph chart js one
 Highcharts.chart('hchart1', {
     chart: {
         type: 'column'
@@ -107,7 +124,8 @@ Highcharts.chart('hchart1', {
         }
     }]
 });
-//
+
+//graph chart js two
 Highcharts.chart('hchart2', {
     chart: {
         type: 'column'
@@ -191,19 +209,4 @@ Highcharts.chart('hchart2', {
         }
     }]
 });
-//
-var splide = new Splide( '.splide', {
-    type   : 'loop',
-    direction: 'ttb',
-    height   : '10rem',
-    wheel    : true,
-    autoplay:true,
-    arrows : false,
-    pagination : false,
-    speed:1000,
-    
-   
-  } );
-  
-  splide.mount();
-  
+
